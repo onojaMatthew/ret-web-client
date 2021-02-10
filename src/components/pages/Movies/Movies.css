@@ -1,0 +1,6 @@
+.container {
+  background: transparent linear-gradient(180deg, #1F1F2400 0%, #1F1F2400 20%, #1F1F2417 44%, #1F1F24 80%, #1F1F24 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
