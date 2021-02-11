@@ -9,12 +9,11 @@ const EmailVerification = () => {
     <div className="verification-container">
       <Row className="justify-content-center">
         <Col xs="11" xl="3">
-          
           <Card>
             <CardBody>
               <h3 className="mt-5"><strong>Enter verification code</strong></h3>
               <p>A 6 digits verification code has been sent to your email. Enter code to continue</p>
-              <Row className="mt-5">
+              <Row className="mt-5 verification">
                 <Col xs="2" xl="2">
                   <Input className="form-control" />
                 </Col>
