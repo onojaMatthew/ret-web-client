@@ -14,7 +14,7 @@ import TVShows from "./pages/TVShows/TVShows";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" render={(props) => <Registration {...props} />} />

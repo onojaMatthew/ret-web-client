@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Row, Col, Card, CardBody, Input } from "reactstrap";
-import { usePaymentInputs } from 'react-payment-inputs';
+import { usePaymentInputs, PaymentInputsWrapper } from 'react-payment-inputs';
 import { Button } from "antd";
 
 import "./Card.css";
 import { CheckOutlined } from "@ant-design/icons";
+import images from 'react-payment-inputs/images';
 
 const Cards = () => {
   const [ submitting, setSubmitting ] = useState(false);
@@ -12,7 +13,14 @@ const Cards = () => {
   const [ cardNumber, setCardNumber ] = useState("");
   const [ expiryDate, setExpiryDate ] = useState("");
   
-  const { meta, getCardNumberProps, getExpiryDateProps, getCVCProps } = usePaymentInputs();
+  const { 
+    meta, 
+    getCardNumberProps, 
+    getExpiryDateProps, 
+    getCVCProps, 
+    wrapperProps,
+    getCardImageProps, 
+  } = usePaymentInputs();
   const handleSubmit = () => {
 
   }
@@ -28,17 +36,19 @@ const Cards = () => {
   }
 
   return (
-    <div className="plan-container">
+    <div className="card-container">
       <Row className="justify-content-center">
         <Col xs="11" xl="3">
           <Card>
             <CardBody className="card-body">
-              <h3 className="mt-5"><strong>Enter verification code</strong></h3>
+              <h3 className="mt-5"><strong>Add Card</strong></h3>
               <p className="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.</p>
               <Row className="mt-4 pl-3 pr-3">
                 <Col xs="12" xl="12">
-                  <div>
-                    <input {...getCardNumberProps({ onChange: handleChangeCardNumber })} value={cardNumber} />
+                  <div {...wrapperProps}>
+                    <label htmlFor="cardNumber">Card Number</label>
+                    <svg {...getCardImageProps({ images })} style={{ float: "right"}} />
+                    <input className="p-3" style={{ width: "100%"}} {...getCardNumberProps({ onChange: handleChangeCardNumber })} value={cardNumber} />
                     {meta.isTouched && meta.error && <span>Error: {meta.error}</span>}
                   </div>
                 </Col>
@@ -47,14 +57,17 @@ const Cards = () => {
               <Row className="mt-4 pl-3 pr-3">
                 <Col xs="12" xl="6">
                   <div>
-                    <input {...getExpiryDateProps({ onChange: handleChangeExpiryDate })} value={expiryDate} />
+                  <label htmlFor="expiryDate">Expiry date</label>
+                    <input className="p-3" id="expiryDate" style={{ width: "100%"}} {...getExpiryDateProps({ onChange: handleChangeExpiryDate })} value={expiryDate} />
                     {meta.isTouched && meta.error && <span>Error: {meta.error}</span>}
                   </div>
                 </Col>
 
                 <Col xs="12" xl="6">
+                  
                   <div>
-                    <input {...getCVCProps({ onChange: handleChangeCVC })} value={cvc} />
+                    <label htmlFor="cvv">CVV</label>
+                    <input className="p-3" id="cvv" style={{ width: "100%"}} {...getCVCProps({ onChange: handleChangeCVC })} value={cvc} />
                     {meta.isTouched && meta.error && <span>Error: {meta.error}</span>}
                   </div>
                 </Col>
