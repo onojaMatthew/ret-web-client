@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AccountPlan from "./pages/AccountPlan/AccountPlan";
+import Cards from "./pages/Card/Card";
 import EmailVerification from "./pages/EmailVerification/EmailVerification";
 import Login from "./pages/Login/Login";
 import Movies from "./pages/Movies/Movies";
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/originals" render={(props) => <Originals {...props} />} />
           <Route exact path="/email_verification" render={(props) => <EmailVerification {...props} />} />
           <Route exact path="/plans" render={(props) => <AccountPlan {...props} />} />
+          <Route exact path="/card" render={(props) => <Cards {...props} />} />
         </Switch>
       </BrowserRouter>
     </div>
