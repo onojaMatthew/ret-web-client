@@ -3,7 +3,7 @@ import { Container, Row, Col,  } from "reactstrap";
 import { Button,Input, Tabs } from "antd";
 import Header from "../Header/Header";
 import "./TVShows.css";
-import { SearchOutlined } from "@ant-design/icons";
+import { CaretRightFilled, SearchOutlined } from "@ant-design/icons";
 import Acquaman from "../../../assets/acquaman.jpeg";
 import War from "../../../assets/war.jpeg";
 import Horror from "../../../assets/horror.jpeg";
@@ -1025,27 +1025,43 @@ const TVShows = () => {
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Horror} alt="acquaman movie" />
-                            <div className="play-div">
-                              <Row>
-                                <Col xs="6" xl="">Movie name</Col>
-                                <Col xs="6" xl="6">
-                                  <p>1h 29m</p>
-                                </Col>
-                              </Row>
-                            </div>
+                          </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p>1h 29m</p>
+                              </Col>
+                            </Row>
                           </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Acquaman} alt="acquaman movie" />
-                            <div className="play-div">
-                              <Row>
-                                <Col xs="6" xl="">Movie name</Col>
-                                <Col xs="6" xl="6">
-                                  <p>1h 29m</p>
-                                </Col>
-                              </Row>
-                            </div>
+                          </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p>1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>jskdksjdskds</Row>
+                                <Row>jskdsjdsk</Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div>
+                                  <CaretRightFilled />
+                                </div>
+                              </Col>
+                            </Row>
                           </div>
                         </Col>
                       </Row>
@@ -1056,7 +1072,6 @@ const TVShows = () => {
                       </Row>
                     </Container>
                   </TabPane>
-                  
                 </Tabs>
               </Col>
             </Row>
