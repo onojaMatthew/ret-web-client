@@ -3,7 +3,7 @@ import { Container, Row, Col,  } from "reactstrap";
 import { Button,Input, Tabs } from "antd";
 import Header from "../Header/Header";
 import "./TVShows.css";
-import { CaretRightFilled, SearchOutlined } from "@ant-design/icons";
+import { CaretRightFilled, InfoOutlined, SearchOutlined } from "@ant-design/icons";
 import Acquaman from "../../../assets/acquaman.jpeg";
 import War from "../../../assets/war.jpeg";
 import Horror from "../../../assets/horror.jpeg";
@@ -81,7 +81,7 @@ const TVShows = () => {
                   <TabPane tab="TV Shows" key="1">
                     <Container>
                       <Row>
-                        <Col xs="12" xl="3" className="cardholder">
+                        <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Horror} alt="acquaman movie" />
                           </div>
@@ -106,7 +106,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -126,7 +129,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -143,7 +146,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -163,7 +169,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -180,7 +186,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -200,7 +209,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -217,7 +226,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -240,7 +252,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -257,7 +269,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -277,7 +292,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -294,7 +309,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -314,7 +332,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -331,7 +349,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -351,7 +372,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -368,7 +389,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -391,7 +415,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -408,7 +432,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -428,7 +455,7 @@ const TVShows = () => {
                             <Row>
                               <Col xs="6" xl="">Movie name</Col>
                               <Col xs="6" xl="6">
-                                <p>1h 29m</p>
+                                <p className="text-right">1h 29m</p>
                               </Col>
                             </Row>
                             <Row>
@@ -445,7 +472,10 @@ const TVShows = () => {
                                 </Row>
                                 <Row>
                                   <Col xs="12" xl="12">
-                                    jkjkdfkskd
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
                                   </Col>
                                 </Row>
                               </Col>
@@ -461,10 +491,80 @@ const TVShows = () => {
                           <div className="movie-list">
                             <img src={War} alt="acquaman movie" />
                           </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Horror} alt="acquaman movie" />
+                          </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
                           </div>
                         </Col>
                       </Row>
@@ -474,20 +574,160 @@ const TVShows = () => {
                           <div className="movie-list">
                             <img src={War} alt="acquaman movie" />
                           </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Cool} alt="acquaman movie" />
+                          </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
                           </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Horror} alt="acquaman movie" />
                           </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Acquaman} alt="acquaman movie" />
+                          </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
                           </div>
                         </Col>
                       </Row>
@@ -503,10 +743,80 @@ const TVShows = () => {
                           <div className="movie-list">
                             <img src={War} alt="acquaman movie" />
                           </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
                           <div className="movie-list">
                             <img src={Cool} alt="acquaman movie" />
+                          </div>
+                          <div className="play-div">
+                            <Row>
+                              <Col xs="6" xl="">Movie name</Col>
+                              <Col xs="6" xl="6">
+                                <p className="text-right">1h 29m</p>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="12" xl="12">
+                                <span className="pg-span">18+</span> <span className="movie-category">Drama, Sex, Relationship, Dating</span>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col xs="8" xl="8">
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <StarRating />
+                                  </Col>
+                                </Row>
+                                <Row>
+                                  <Col xs="12" xl="12">
+                                    <span className="icon-span">
+                                      <InfoOutlined className="info-icon" />
+                                    </span>
+                                    <span className="more-text">More Info</span>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs="4" xl="4">
+                                <div className="play-button">
+                                  <CaretRightFilled className="icon" />
+                                </div>
+                              </Col>
+                            </Row>
                           </div>
                         </Col>
                         <Col xs="12" xl="3" className="p-1">
