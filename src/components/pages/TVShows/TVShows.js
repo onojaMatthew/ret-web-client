@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import { Input } from "antd";
+import { Button, Input } from "antd";
 import Header from "../Header/Header";
 import "./TVShows.css";
 import { SearchOutlined } from "@ant-design/icons";
@@ -26,10 +26,18 @@ const TVShows = () => {
                   talented visionaries, creative minds daring to believe in a New Africa, putting 
                   together content that reflects it. Feel the Heat on REDTV.
                 </p>
+                <Row>
+                  <Col xs="6" xl="3">
+                    <Button className="watch-button">Watch</Button>
+                  </Col>
+                  <Col xs="6" xl="3">
+                    <Button className="more-info-button">More Info</Button>
+                  </Col>
+                </Row>
               </Col>
             </Row>
-            <Row className="justify-content-center mb-5">
-              <Col xs="12" xl="3" style={{ paddingTop: "250px"}}>
+            <Row className="justify-content-center search-container">
+              <Col xs="12" xl="3" >
                 <Input id="lower-search-box" placeholder="Search for TV movies or series" prefix={<SearchOutlined />} />
               </Col>
             </Row>
@@ -37,42 +45,22 @@ const TVShows = () => {
         </Col>
       </Row>
       <div className="justify-content-center movie-search-container">
-        <Col xs="12" xl="6">
+        <div className="flex-movie-container">
           <Row className="mb-3">
-            <Col xs="12" xl="2">
+            <Col xs="12" xl="3">
               <p className="movie-name">The Hobbit</p>
             </Col>
-            <Col xs="12" xl="2">
+            <Col xs="12" xl="3">
               <p className="movie-name">Money Heist</p>
             </Col>
-            <Col xs="12" xl="2">
+            <Col xs="12" xl="3">
               <p className="movie-name">A Man called God</p>
             </Col>
-            <Col xs="12" xl="2">
+            <Col xs="12" xl="3">
               <p className="movie-name">The Originals</p>
             </Col>
-            <Col xs="12" xl="2">
-              <p className="movie-name">The Discovery of Witches</p>
-            </Col>
           </Row>
-          <Row>
-            <Col xs="12" xl="2">
-              <p className="movie-name">The Hobbit</p>
-            </Col>
-            <Col xs="12" xl="2">
-              <p className="movie-name">Money Heist</p>
-            </Col>
-            <Col xs="12" xl="2">
-              <p className="movie-name">A Man called God</p>
-            </Col>
-            <Col xs="12" xl="2">
-              <p className="movie-name">The Originals</p>
-            </Col>
-            <Col xs="12" xl="2">
-              <p className="movie-name">The Discovery of Witches</p>
-            </Col>
-          </Row>
-        </Col>
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@
   opacity: 1;
   overflow: hidden;
   overflow-x: hidden;
-  /* padding-bottom: 50px !important; */
 }
 
 .image-background {
@@ -11,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 90vh;
   width: 100% !important;
 }
 
@@ -41,6 +40,11 @@
   letter-spacing: 0px;
   color: #FFFFFFD6;
   opacity: 1;
+}
+
+.flex-movie-container {
+  width: 776px;
+  margin: 0 auto;
 }
 
 .movie-summary {
@@ -85,6 +89,11 @@
   font-size: 30px;
 }
 
+.search-container {
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+
 .movie-search-container {
   background: #1F1F24;
   height: 100px;
@@ -98,10 +107,29 @@
   border-radius: 44px;
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/19px var(--unnamed-font-family-manrope);
   letter-spacing: var(--unnamed-character-spacing-0);
-  text-align: left;
+  padding: 5px;
   font: normal normal normal 14px/19px Manrope;
   letter-spacing: 0px;
   color: #FFFFFFB3;
+  opacity: 1;
+}
+
+.more-info-button {
+  height: 55px;
+  background: transparent;
+  border: 2px dashed #FFFFFF;
+  border-radius: 8px;
+  color: #fff;
+  opacity: 1;
+  width: 100%;
+}
+
+.watch-button {
+  width: 158px;
+  height: 100%;
+  color: #fff;
+  background: #F05366 0% 0% no-repeat padding-box;
+  border-radius: 8px;
   opacity: 1;
 }
 
@@ -113,6 +141,11 @@
     margin-top: 200px;
   }
 
+  .search-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
   .description-box {
     padding-left: 50px;
   }
@@ -128,4 +161,32 @@
     padding-left: 20px !important;
     font-size: 30px;
   }
+
+  .more-info-button {
+    height: 55px;
+    background: transparent;
+    color: #fff;
+    border: 2px dashed #FFFFFF;
+    border-radius: 8px;
+    opacity: 1;
+    width: 140px;
+  }
+  
+  .watch-button {
+    width: 140px;
+    color: #fff;
+    height: 100%;
+    background: #F05366 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+  }
+
+  .image-background {
+    background-image: url("../../../assets/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100% !important;
+  }   
 }
