@@ -7,6 +7,7 @@ const TVSeries = () => {
     <div className="container">
       <Header />
       <h2>TV Series</h2>
+      
     </div>
   );
 }
