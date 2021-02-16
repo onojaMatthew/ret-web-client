@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Row, Col, Card, CardBody, Input } from "reactstrap";
-import { usePaymentInputs, PaymentInputsWrapper } from 'react-payment-inputs';
+import { Row, Col, Card, CardBody } from "reactstrap";
+import { usePaymentInputs } from 'react-payment-inputs';
 import { Button } from "antd";
 
 import "./Card.css";
@@ -8,7 +8,7 @@ import { CheckOutlined } from "@ant-design/icons";
 import images from 'react-payment-inputs/images';
 
 const Cards = () => {
-  const [ submitting, setSubmitting ] = useState(false);
+  // const [ submitting, setSubmitting ] = useState(false);
   const [ cvc, setCvc ] = useState("");
   const [ cardNumber, setCardNumber ] = useState("");
   const [ expiryDate, setExpiryDate ] = useState("");
@@ -21,9 +21,10 @@ const Cards = () => {
     wrapperProps,
     getCardImageProps, 
   } = usePaymentInputs();
-  const handleSubmit = () => {
+  
+  // const handleSubmit = () => {
 
-  }
+  // }
 
   const handleChangeExpiryDate = (e) => {
     setExpiryDate(e.target.value)

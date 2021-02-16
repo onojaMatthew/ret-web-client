@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, CardBody, Input } from "reactstrap";
+import { Row, Col, Card, CardBody } from "reactstrap";
 import { Button } from "antd";
 
 import "./AccountPlan.css";
